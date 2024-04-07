@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Class 4 - CSS Advance</title>
+        <!-- start fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+        <!-- end fonts -->
+        <style>
+            /* .box-1 {
+                height: 150px;
+                width: 150px;
+                background-color: red;
+                margin: 30px 10px 10px 20px;
+
+                padding-top: 20px;
+                padding-left: 20px;
+            } */
+
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: "Montserrat";
+            }
+
+            body {
+                font-family: "Montserrat";
+                background-color: #f5f5f5;
+            }
+
+            .card {
+                /* background-color: #c7ecee; */
+                padding: 10px;
+                /* margin-right: 20px;
+                margin-left: 20px; */
+                margin: 20px;
+                border-radius: 8px;
+                width: 322px;
+
+                /* box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px; */
+                box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            }
+
+            .card-title {
+                /* background-color: red; */
+                margin-bottom: 20px;
+                /* font-family: "Montserrat", Arial, sans-serif; */
+            }
+
+            .card-title h3 {
+                font-size: 22px;
+                margin: 10px 0;
+            }
+
+            .card-title,
+            .card-body {
+                font-family: "Montserrat", Arial, sans-serif;
+            }
+
+            .card-image {
+                text-align: center;
+            }
+
+            .img {
+                width: 300px;
+                border-radius: 8px;
+            }
+
+            .nice-text {
+                /* font-family: "Montserrat", sans-serif; */
+                font-family: "Montserrat", Arial, sans-serif;
+                margin: 10px 0;
+            }
+
+            .font-small {
+                font-size: 16px;
+            }
+
+            .text-white {
+                color: #fff;
+            }
+
+            /* start flex box */
+            .row {
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            /* end flex box */
+
+            .btn-blue {
+                padding: 10px 20px;
+                margin-top: 10px;
+                background-color: #4834d4;
+                border: 1px solid #4834d4;
+                color: #dff9fb;
+                border-radius: 4px;
+            }
+
+            .btn-outline-blue {
+                border: 2px solid #4834d4;
+                padding: 10px 20px;
+                margin-top: 10px;
+                color: #4834d4;
+                font-weight: 700;
+                border-radius: 4px;
+                background-color: #fff;
+            }
+
+            .btn-outline-blue:hover {
+                background-color: #4834d4;
+                color: #fff;
+                cursor: pointer;
+            }
+
+
+            .box-container {
+                background-color: #130f40;
+                padding: 20px;
+
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .box-1,
+            .box-2,
+            .box-3 {
+                height: 100px;
+                width: 100px;
+            }
+
+            .box-1 {
+                background-color: #be2edd;
+            }
+
+            .box-2 {
+                background-color: #eb4d4b;
+            }
+
+            .box-3 {
+                background-color: #22a6b3;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- css selector: class, id, tag -->
+        <div>
+            <h1 class="nice-text"> Flexbox model </h1>
+            <div class="box-container">
+                <div class="box-1">
+                    Box 1
+                </div>
+
+                <div class="box-2">
+                    Box 2
+                </div>
+
+                <div class="box-3">
+                    Box 3
+                </div>
+
+                <div class="box-2">
+                    Box 2
+                </div>
+
+                <div class="box-1">
+                    Box 1
+                </div>
+            </div>
+        </div>
+
+        <!-- MARGIN -->
+        <h1 class="nice-text">Margin and Padding</h1>
+        <div class="row">
+            <!-- card 1 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="./blog.jpg" alt="Which is your favourite language?" class="img">
+                </div>
+                <div class="card-title">
+                    <h3>
+                        Which is your favourite language?
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <p class="font-small">
+                        I really love python. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus iusto
+                        porro
+                        consequatur minima, ea maxime explicabo illum laborum velit assumenda quasi magnam repudiandae
+                        natus
+                        molestiae non atque error sequi perspiciatis.
+                    </p>
+
+                    <button class="btn-blue">
+                        Read more
+                    </button>
+                </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="./blog.jpg" alt="Which is your favourite language?" class="img">
+                </div>
+                <div class="card-title">
+                    <h3>
+                        Which is your favourite language?
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <p class="font-small">
+                        I really love python. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus iusto
+                        porro
+                        consequatur minima, ea maxime explicabo illum laborum velit assumenda quasi magnam repudiandae
+                        natus
+                        molestiae non atque error sequi perspiciatis.
+                    </p>
+                    <button class="btn-outline-blue">
+                        Read more
+                    </button>
+                </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="./blog.jpg" alt="Which is your favourite language?" class="img">
+                </div>
+                <div class="card-title">
+                    <h3>
+                        Which is your favourite language?
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <p class="font-small">
+                        I really love python. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus iusto
+                        porro
+                        consequatur minima, ea maxime explicabo illum laborum velit assumenda quasi magnam repudiandae
+                        natus
+                        molestiae non atque error sequi perspiciatis.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- card 1 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="./blog.jpg" alt="Which is your favourite language?" class="img">
+                </div>
+                <div class="card-title">
+                    <h3>
+                        Which is your favourite language?
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <p class="font-small">
+                        I really love python. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus iusto
+                        porro
+                        consequatur minima, ea maxime explicabo illum laborum velit assumenda quasi magnam repudiandae
+                        natus
+                        molestiae non atque error sequi perspiciatis.
+                    </p>
+                </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="./blog.jpg" alt="Which is your favourite language?" class="img">
+                </div>
+                <div class="card-title">
+                    <h3>
+                        Which is your favourite language?
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <p class="font-small">
+                        I really love python. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus iusto
+                        porro
+                        consequatur minima, ea maxime explicabo illum laborum velit assumenda quasi magnam repudiandae
+                        natus
+                        molestiae non atque error sequi perspiciatis.
+                    </p>
+                </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="./blog.jpg" alt="Which is your favourite language?" class="img">
+                </div>
+                <div class="card-title">
+                    <h3>
+                        Which is your favourite language?
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <p class="font-small">
+                        I really love python. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus iusto
+                        porro
+                        consequatur minima, ea maxime explicabo illum laborum velit assumenda quasi magnam repudiandae
+                        natus
+                        molestiae non atque error sequi perspiciatis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

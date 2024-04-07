@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- START - FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <!-- END - FONTS -->
+
+        <title>Class 4 - CSS BASICS</title>
+
+        <style>
+            * {
+                font-family: "Poppins", sans-serif;
+            }
+
+            p {
+                color: skyblue;
+                background-color: blue;
+                font-family: "Poppins", sans-serif;
+            }
+
+            .greentext {
+                font-size: 55px;
+                color: green;
+                font-family: "Poppins", sans-serif;
+            }
+
+            #boldtext {
+                font-weight: bold;
+            }
+
+            img {
+                width: 800px;
+                /* border-style: solid; */
+                /* solid, dotted, dashed */
+                /* border-width: 2px;
+                border-color: rebeccapurple; */
+                border: 10px solid red;
+                border-radius: 120px;
+            }
+
+            .rounded-image {
+                width: 300px;
+                border-radius: 50%;
+            }
+
+            .background-red {
+                background-color: red;
+            }
+
+            .background-green {
+                background-color: green;
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <div class="background-red">
+            <p>Css selector</p>
+            <ul>
+                <li>TAG</li>
+                <li>CLASS (. will be use for class)</li>
+                <li>ID (# will be use for id)</li>
+            </ul>
+        </div>
+
+
+        <div>
+            <p style="font-size: 22px;" class="background-red">
+                A little earlier, we reported on a spokesperson for Cogat - the <span id="boldtext"> Israeli body
+                </span>
+                that coordinates humanitarian aid to <span class="greentext"> Gaza </span> - saying they hope an
+                investigation into the killing of seven aid workers could report back in the next few days.
+            </p>
+        </div>
+
+        <div>
+            <p class="background-green">
+                3 ways to write css
+            </p>
+            <ul>
+                <li>inline css with html attribute</li>
+                <li>using style tag</li>
+                <li>link a css file at head tag</li>
+            </ul>
+
+            <p>some cool fonts to use for your website</p>
+            <ul>
+                <li>poppins</li>
+                <li>roboto</li>
+                <li>lobstar, etc..</li>
+            </ul>
+        </div>
+
+        <div>
+            <img src="./image-1.jpg" alt="A FLOWER">
+        </div>
+
+        <div>
+            <img src="./2.jpeg" alt="some people" class="rounded-image">
+        </div>
+
+    </body>
+</html>
