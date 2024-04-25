@@ -102,6 +102,15 @@
                 border-radius: 4px;
             }
 
+            .btn-green {
+                padding: 10px 20px;
+                margin-top: 10px;
+                background-color: #2ecc71;
+                border: 1px solid #2ecc71;
+                color: #dff9fb;
+                border-radius: 4px;
+            }
+
             .btn-outline-blue {
                 border: 2px solid #4834d4;
                 padding: 10px 20px;
@@ -118,7 +127,6 @@
                 cursor: pointer;
             }
 
-
             .box-container {
                 background-color: #130f40;
                 padding: 20px;
@@ -129,26 +137,93 @@
 
             .box-1,
             .box-2,
-            .box-3 {
+            .box-3,
+            .box-11,
+            .box-22,
+            .box-33 {
                 height: 100px;
                 width: 100px;
             }
 
-            .box-1 {
+            .box-1,
+            .box-11 {
                 background-color: #be2edd;
             }
 
-            .box-2 {
+            .box-2,
+            .box-22 {
                 background-color: #eb4d4b;
             }
 
-            .box-3 {
+            .box-3,
+            .box-33 {
                 background-color: #22a6b3;
+            }
+
+            .nav-container {
+                position: sticky;
+                top: 0;
+                background-color: #be2edd;
+            }
+
+            .navbar-nav {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            .logo {
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+
+            .nav-link {
+                font-size: 1rem;
+            }
+
+            /* .card {
+                position: relative;
+            } */
+
+            .tootlips {
+                position: absolute;
+                top: 0px;
+                left: 10px;
+            }
+
+            .card-1 {
+                position: relative;
+            }
+
+            .share {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+            .card-2 {
+                position: relative;
+            }
+
+            .good {
+                position: absolute;
+                top: 15%;
+                right: 40%;
             }
         </style>
     </head>
     <body>
         <!-- css selector: class, id, tag -->
+        <div class="nav-container">
+            <nav class="navbar-nav">
+                <p class="logo">Logo</p>
+                <p class="nav-link">Home</p>
+                <p class="nav-link">About</p>
+            </nav>
+        </div>
         <div>
             <h1 class="nice-text"> Flexbox model </h1>
             <div class="box-container">
@@ -178,7 +253,8 @@
         <h1 class="nice-text">Margin and Padding</h1>
         <div class="row">
             <!-- card 1 -->
-            <div class="card">
+            <!-- position relative -->
+            <div class="card card-1">
                 <div class="card-image">
                     <img src="./blog.jpg" alt="Which is your favourite language?" class="img">
                 </div>
@@ -200,10 +276,23 @@
                         Read more
                     </button>
                 </div>
+
+                <!-- tootlips -->
+                <div class="tootlips">
+                    <button class="btn-green">Like</button>
+                </div>
+
+                <!-- share -->
+                <!-- position absolute -->
+                <div class="share">
+                    <button class="btn-blue">
+                        Share
+                    </button>
+                </div>
             </div>
 
             <!-- card 2 -->
-            <div class="card">
+            <div class="card card-2">
                 <div class="card-image">
                     <img src="./blog.jpg" alt="Which is your favourite language?" class="img">
                 </div>
@@ -224,6 +313,10 @@
                         Read more
                     </button>
                 </div>
+
+                <p class="good" style="color: #fff; font-size: 1.2rem; font-weight: 700;">
+                    good
+                </p>
             </div>
 
             <!-- card 3 -->
